@@ -1,0 +1,176 @@
+body {
+	background-color: black;
+}
+
+
+@font-face {
+	font-family: 'DroidSans';
+	src: url('./DroidSans.eot');
+	src: local('DroidSans'), url('./DroidSans.woff') format('woff'), url('./DroidSans.ttf') format('truetype');
+}
+
+@media all and (min-width: 700px) {
+	#page {
+		background-color: black;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%; 
+		word-wrap:break-word;
+	}
+
+	#header {
+        z-index:100;
+		top: 0px;
+		right: 0%;
+	    left: 0%;
+	    position: fixed;
+	    background-color: black;
+	    text-align: center;
+	}
+
+	#header ul {
+		list-style-type: none;
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		font-size: 22px;
+		font-family: 'DroidSans';
+		font-weight: normal;
+		text-align: left;
+		vertical-align: middle;
+		color: gray;
+	} 
+
+	#header ul ul {
+		display: none;
+	}
+
+	#header ul li:hover> ul {
+		background: #black;
+		display: block;
+		margin: 0;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#header ul li {
+		float: left;
+		position: relative;
+		margin: 0;
+	}
+
+	#header ul li a {
+		padding: 2px 20px 2px 20px;
+		margin: 0;
+		display: block;
+		color: #fff4e6;
+		text-decoration: none;
+	}
+
+	#header ul li:hover {
+		background: black;
+	}
+
+	#header ul li:hover a {
+		color: #3c2f2f;
+	}
+
+	#header ul li:hover>ul li {
+		float: none;
+		display: block;
+	}
+
+	#header ul li:hover>ul li a {
+		color: black;
+		font-size: 15px;
+	}
+
+	#header ul li:hover>ul li a:hover {
+		color: #fff4e6;
+		font-size: 15px;
+	}
+
+	#header ul li ul {
+		position: absolute;
+		border-left: 1px solid yellow;
+		border-right: 1px solid yellow;
+		border-bottom: 1px solid yellow;
+	}
+
+	li.buttonleft {
+		display: inline-block;
+		padding-left: 60px;
+		padding-right: 0px;
+	}
+
+	li.buttonright {
+		display: inline-block;
+		padding-left: 0px;
+		padding-right: 60px;
+	}
+
+	.accountmenu {
+		margin: 10px;
+	}
+
+	li.account {
+		font-size: 15px;
+		color: black;
+		text-align: center;
+	}
+
+	#header ul li:hover> ul li.account {
+		background: #fff4e6;
+		display: block;
+		margin: 0;
+		margin: 0px;
+		padding: 0px;
+	} 
+
+	#header ul li:hover>ul li.account a {
+		color: black;
+		font-size: 15px;
+	} 
+
+	#footer {
+		text-align: center;
+		margin: auto;
+	}
+
+	#footer ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li#footer {
+		display: inline;
+		list-style-type: none;
+		margin-left: none; 
+	}
+}
+
+@media all and (max-width: 700px) {
+	#page {
+		background-color: #0f0f0f;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%; 
+		word-wrap:break-word;
+	}	
+}
+
+
+	#text {
+        position: relative;
+		background-color: #0f0f0f;
+		padding-top: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 70px;
+		margin-bottom: 20px;
+		width: 80%;
+		color: gray;
+	}
+
